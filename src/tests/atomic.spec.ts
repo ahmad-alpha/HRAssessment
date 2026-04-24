@@ -18,7 +18,7 @@ import { Balance } from '../database/entities/balance.entity';
 import { IdempotencyRecord } from '../database/entities/idempotency-record.entity';
 import { GlobalExceptionFilter } from '../common/filters/global-exception.filter';
 
-const { app: hcmApp, balances, seedBalances } = require('../mocks/hcm-mock-server');
+const { app: hcmApp, balances, seedBalances } = require('./mocks/hcm-mock-server');
 
 describe('Atomic Processing & Concurrency Integration Tests', () => {
   let app: INestApplication;
